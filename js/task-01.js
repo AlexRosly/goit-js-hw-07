@@ -13,9 +13,9 @@
 // Количество элементов: 4
 
 const itemEl = document.querySelectorAll('.item')
-console.log(`Всего категорий ${itemEl.length}`);
+console.log(`В списке ${itemEl.length} категорий`);
 
-itemEl.forEach(item => {console.log(`Категория:${item.firstElementChild.textContent}\nКоличество элементов: ${item.querySelectorAll('li').length}`)});
-
-
-
+itemEl.forEach(item => {
+    console.log(`Категория:${item.firstElementChild.textContent}\n
+Количество элементов: ${item.querySelectorAll('li').length}`)
+});
